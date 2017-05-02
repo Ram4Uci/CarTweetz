@@ -1,0 +1,21 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CarTweetz"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Gauges="using:DevExpress.UI.Xaml.Gauges"
+    x:Class="CarTweetz.MainPage"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+
+        <Gauges:CircularGauge HorizontalAlignment="Left" Margin="0,100,0,0" Height="200" Width="200" FontSize="10" VerticalAlignment="Top" Background="Red" >
+            <Gauges:ArcScale ShowLabels="True" ShowMinorTickmarks="True" StartValue="0" EndValue="10000" StartAngle="-225" EndAngle="45" MajorIntervalCount="10" MinorIntervalCount="5"/> 
+        </Gauges:CircularGauge>
+        <Gauges:ArcScaleLabelOptions ShowFirst="False"/>
+    
+
+    </Grid>
+</Page>
+
